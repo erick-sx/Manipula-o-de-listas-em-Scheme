@@ -1,0 +1,5 @@
+#lang racket
+
+(define lista '(1 2 3 4))
+
+(define ult (lambda (lista aux) (cond ((null? lista) aux) (= aux (car lista)) (else ult(cdr lista)))))
